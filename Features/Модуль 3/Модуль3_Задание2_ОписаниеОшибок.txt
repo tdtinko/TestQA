@@ -1,0 +1,36 @@
+1. В _0540PostingCashTransferOrder.feature 
+_054006 create Cash transfer order (from Cash/Bank accounts to bank account in the same currency)
+(_054006 создать распоряжение о переводе денежных средств (с наличных/банковских счетов на банковский счет в той же валюте))
+ Failed  {ExternalDataProcessor.����⠑����䥩ᮬ.Form.��ଠ.Form(6544)}  {ExternalDataProcessor.����⠑����䥩ᮬ.Form.��ଠ.Form(6522)}  One or more standard table lines are not found in the
+ 
+ В документе "Cash transfer order 3 dated 24.05.2022 12:47:35" в колонке "Сумма" не найдено значение 500.
+ 
+ _054009 currency exchange within one Cash/Bank accounts with exchange in parts (exchange rate has decreased)
+ _054009 обмен валюты в пределах одного кассового/банковского счета с частичным обменом (курс обмена снизился)
+ Таблица формы с именем <Список платежей> не найдена
+ 
+  _054017 check message output in case the user tries to create Bank receipt again by Cash transfer order
+  _054017 проверьте вывод сообщения на случай, если пользователь попытается повторно создать банковскую квитанцию с помощью платежного поручения
+  Банковские кассовые документы
+05:50:36 Ожидаемая ошибка <Общая сумма документа(ов) "Платежное поручение" уже получена на основании документа(ов) "Банковская квитанция".> Подстрока в сообщениях пользователя
+
+ Log file not found (Файл журнала не найден: ): C:\BuildAgentThree\work\161527a3295c878a/VAResult/logdata/PartnerCatalogs.log
+ 
+ _40002AdditionalFunctionality.feature
+ _4000200 preparation
+ Шаг (и я ввожу текст "Дополнительная функциональность" в поле "Описание") не был выполнен. Так как Атрибут формы с заголовком <Description> не найден.
+ 
+ _4000202 hardware
+ Шаг (и я перехожу к строке в таблице "Список") не был выполнен, так как Не удается перейти к нужной строке в таблице <Список>.
+ 
+ _0051192 filling in Package unit when create new item
+ _0051192 заполнение единицы упаковки при создании нового товара
+ Шаг (и я нажимаю кнопку выбора в поле "Единица упаковки") не был выполнен, так как вызов контекстного метода (StartChoosing) Действие неприменимо к данному состоянию управления.
+ 
+  Log file not found: C:\BuildAgentThree\work\161527a3295c878a/VAResult/logdata/LandedCost.log
+  
+  Log file not found: C:\BuildAgentThree\work\161527a3295c878a/VAResult/logdata/AdditionalCostAllocation.log
+  
+  
+ 
+
