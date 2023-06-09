@@ -96,7 +96,7 @@
 
 
 
-	И я проверяю или создаю для справочника "AddAttributeAndPropertyValues" объекты:
+	И я проверяю или создаю для справочника "AddAttributeAndPropertyValues" объекты с обмен данными загрузка истина:
 		| 'Ref'                                                                                   | 'DeletionMark' | 'Owner'                                                                                              | 'Code' | 'AdditionalID' | 'Description_en' | 'Description_hash' | 'Description_ru' | 'Description_tr' | 'UniqueID'                          |
 		| 'e1cib/data/Catalog.AddAttributeAndPropertyValues?ref=b762b13668d0905011eb76684b9f6873' | 'False'        | 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb76684b9f6872' | 1      | ''             | 'S'              | ''                 | ''               | ''               | '_549a76a8e7e94706a4422ff3e930eef3' |
 		| 'e1cib/data/Catalog.AddAttributeAndPropertyValues?ref=b762b13668d0905011eb76684b9f6874' | 'False'        | 'e1cib/data/ChartOfCharacteristicTypes.AddAttributeAndProperty?ref=b762b13668d0905011eb76684b9f6872' | 2      | ''             | 'XS'             | ''                 | ''               | ''               | '_e17e0565740d48b3a2a66c69ec0a376c' |
@@ -224,7 +224,7 @@
 
 
 
-	И я проверяю или создаю для справочника "Users" объекты:
+	И я проверяю или создаю для справочника "Users" объекты с обмен данными загрузка истина:
 		| 'Ref'                                                           | 'DeletionMark' | 'Code' | 'Description' | 'InfobaseUserID'                       | 'Partner' | 'LocalizationCode' | 'ShowInList' | 'UserGroup'                                                          | 'InterfaceLocalizationCode' | 'FormScaleVariant' | 'Description_en' | 'Description_hash' | 'Description_ru' | 'Description_tr' |
 		| 'e1cib/data/Catalog.Users?ref=b762b13668d0905011eb766bf96b2777' | 'False'        | 1      | 'Админ'       | '0d1a0eef-ac2d-4087-b83d-d967584494cc' | ''        | 'en'               | 'False'      | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'en'                        | ''                 | 'Админ'          | ''                 | ''               | ''               |
 		| 'e1cib/data/Catalog.Users?ref=aa7f120ed92fbced11eb13d7279770c0' | 'False'        | 2      | 'CI'          | 'd8339fad-aa7c-4c28-9755-547bc50e2083' | ''        | 'en'               | 'True'       | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'ru'                        | ''                 | 'CI'             | ''                 | ''               | ''               |
@@ -281,7 +281,7 @@
 
 
 
-	И я проверяю или создаю для справочника "Specifications" объекты:
+	И я проверяю или создаю для справочника "Specifications" объекты с обмен данными загрузка истина:
 		| 'Ref'                                                                    | 'DeletionMark' | 'Code' | 'Type'                          | 'ItemBundle'                                                    | 'UniqueMD5'                                       | 'Description_en'           | 'Description_hash'         | 'Description_ru'           | 'Description_tr'           |
 		| 'e1cib/data/Catalog.Specifications?ref=b762b13668d0905011eb766bf96b2755' | 'False'        | 1      | 'Enum.SpecificationType.Set'    | ''                                                              | 'A3 26 8D 43 98 25 08 12 B0 08 0D 6E EA C5 3A E0' | 'Спецификация 1'           | ''                         | ''                         | ''                         |
 		| 'e1cib/data/Catalog.Specifications?ref=b762b13668d0905011eb766bf96b2756' | 'False'        | 2      | 'Enum.SpecificationType.Set'    | ''                                                              | '96 C4 57 EB 58 E9 E7 D3 7E F1 52 45 3E FD 98 A3' | 'Спецификация 2'           | ''                         | ''                         | ''                         |
@@ -342,7 +342,7 @@
 
 	И я проверяю или создаю для справочника "ObjectStatuses" объекты:
 		| 'Ref'                                                                    | 'DeletionMark' | 'Parent'                                                            | 'IsFolder' | 'Code' | 'SetByDefault' | 'Posting' | 'Description_en'                          | 'Description_hash' | 'Description_ru' | 'Description_tr' | 'UniqueID'                          |
-		| 'e1cib/data/Catalog.ObjectStatuses?refName=PhysicalInventory'            | 'False'        | ''                                                                  | 'True'     | 1      | ''             | ''        | 'Инвентаризация товаров'                  | ''                 | ''               | ''               | '_011ff8e30cf94565b46e079f1abb75a6' |
+		| 'e1cib/data/Catalog.ObjectStatuses?refName=PhysicalInventory'            | 'False'        | ''                                                                  | 'True'     | 27      | ''             | ''        | 'Инвентаризация товаров'                  | ''                 | ''               | ''               | '_011ff8e30cf94565b46e079f1abb75a6' |
 		| 'e1cib/data/Catalog.ObjectStatuses?refName=IncomingPaymentOrder'         | 'False'        | ''                                                                  | 'True'     | 1      | ''             | ''        | 'IncomingPaymentOrder'                    | ''                 | ''               | ''               | '_d74a42dedf1b4837ab902b5246719782' |
 		| 'e1cib/data/Catalog.ObjectStatuses?refName=PhysicalCountByLocation'      | 'False'        | ''                                                                  | 'True'     | 2      | ''             | ''        | 'Пересчет товаров'                        | ''                 | ''               | ''               | '_f2caef1fffef41d3b1e506c06265f7cc' |
 		| 'e1cib/data/Catalog.ObjectStatuses?refName=ReconciliationStatement'      | 'False'        | ''                                                                  | 'True'     | 4      | ''             | ''        | 'Сверка взаиморасчетов'                   | ''                 | ''               | ''               | '_2bc125ff84c345afb9a379ecf9973f7a' |
@@ -389,7 +389,7 @@
 
 
 
-	И я проверяю или создаю для справочника "ItemKeys" объекты:
+	И я проверяю или создаю для справочника "ItemKeys" объекты с обмен данными загрузка истина:
 		| 'Ref'                                                              | 'DeletionMark' | 'Code' | 'Item'                                                          | 'Unit' | 'Specification'                                                          | 'AffectPricingMD5'                                | 'UniqueMD5'                                       | 'ItemKeyID' | 'Description_en'                        | 'Description_hash'          | 'Description_ru'            | 'Description_tr'            | 'Height' | 'Length' | 'Volume' | 'Weight' | 'Width' |
 		| 'e1cib/data/Catalog.ItemKeys?ref=b762b13668d0905011eb76684b9f687e' | 'False'        | 1      | 'e1cib/data/Catalog.Items?ref=b762b13668d0905011eb76684b9f687d' | ''     | ''                                                                       | '4A 53 01 2D 90 DB F5 40 69 39 46 E6 58 4E 97 94' | 'AD 1B 7B B1 90 6B 76 B6 A1 8F 21 1C 57 8A 45 37' | ''          | 'S/Красный'                             | 'S/Красный'                 | 'S/Красный'                 | 'S/Красный'                 |          |          |          | 0.21     |         |
 		| 'e1cib/data/Catalog.ItemKeys?ref=b762b13668d0905011eb766bf96b274f' | 'False'        | 2      | 'e1cib/data/Catalog.Items?ref=b762b13668d0905011eb76684b9f687d' | ''     | ''                                                                       | '5C D9 37 CD 2A F3 17 D7 11 01 79 CE 68 BE CD F5' | 'C6 20 E7 A5 67 61 3F 81 84 D4 9C 76 01 CA BA 34' | ''          | 'XS/Черный'                             | 'XS/Черный'                 | 'XS/Черный'                 | 'XS/Черный'                 |          |          |          |          |         |

@@ -3,7 +3,7 @@
 	"Lang": "ru",
 	"DebugLog": false,
 	"ВерсияVA": "ver 1.2.040.15",
-	"КаталогФич": "C:\\VA_Tests\\TestQA\\Features_IRP\\Internal\\Быстрые проверки\\Проверка открытия форм справочников.feature",
+	"КаталогФич": "",
 	"ДобавлятьКИмениСценарияУсловияВыгрузки": false,
 	"ЗаписыватьВидеоВыполненияТестов": false,
 	"КоличествоКадровВидеоВыполненияТестов": 5,
@@ -123,7 +123,8 @@
 	"ДелатьОтчетВоВнутреннемФормате": false,
 	"КаталогиБиблиотек": [
 		"C:\\VA_Tests\\vanessa-automation\\features\\Libraries",
-		"C:\\VA_Tests\\TestQA\\Features\\External"
+		"C:\\VA_Tests\\TestQA\\Features\\External",
+		"C:\\VA_Tests\\TestQA\\Features_IRP\\External"
 	],
 	"СписокТеговИсключение": [
 		"IgnoreOnCIMainBuild"
