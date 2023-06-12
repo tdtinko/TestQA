@@ -226,8 +226,8 @@
 
 	И я проверяю или создаю для справочника "Users" объекты с обмен данными загрузка истина:
 		| 'Ref'                                                           | 'DeletionMark' | 'Code' | 'Description' | 'InfobaseUserID'                       | 'Partner' | 'LocalizationCode' | 'ShowInList' | 'UserGroup'                                                          | 'InterfaceLocalizationCode' | 'FormScaleVariant' | 'Description_en' | 'Description_hash' | 'Description_ru' | 'Description_tr' |
-		| 'e1cib/data/Catalog.Users?ref=b762b13668d0905011eb766bf96b2777' | 'False'        | 1      | 'Админ'       | '0d1a0eef-ac2d-4087-b83d-d967584494cc' | ''        | 'en'               | 'False'      | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'en'                        | ''                 | 'Админ'          | ''                 | ''               | ''               |
-		| 'e1cib/data/Catalog.Users?ref=aa7f120ed92fbced11eb13d7279770c0' | 'False'        | 2      | 'CI'          | 'd8339fad-aa7c-4c28-9755-547bc50e2083' | ''        | 'en'               | 'True'       | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'ru'                        | ''                 | 'CI'             | ''                 | ''               | ''               |
+		| 'e1cib/data/Catalog.Users?ref=b762b13668d0905011eb766bf96b2777' | 'False'        | 2      | 'Админ'       | '0d1a0eef-ac2d-4087-b83d-d967584494cc' | ''        | 'en'               | 'False'      | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'en'                        | ''                 | 'Админ'          | ''                 | ''               | ''               |
+		//| 'e1cib/data/Catalog.Users?ref=aa7f120ed92fbced11eb13d7279770c0' | 'False'        | 2      | 'CI'          | 'd8339fad-aa7c-4c28-9755-547bc50e2083' | ''        | 'en'               | 'True'       | 'e1cib/data/Catalog.UserGroups?ref=b762b13668d0905011eb767f10805e2c' | 'ru'                        | ''                 | 'CI'             | ''                 | ''               | ''               |
 
 
 
@@ -538,3 +538,9 @@
 		| 'e1cib/data/Catalog.PartnerSegments?ref=b762b13668d0905011eb76684b9f6864' | 'e1cib/data/Catalog.Partners?ref=b762b13668d0905011eb7663e35d7952' |
 		| 'e1cib/data/Catalog.PartnerSegments?ref=b762b13668d0905011eb76684b9f6864' | 'e1cib/data/Catalog.Partners?ref=b762b13668d0905011eb7663e35d7953' |
     
+	// Справочник.ExpenseAndRevenueTypes
+
+	И я проверяю или создаю для справочника "ExpenseAndRevenueTypes" объекты:
+		| 'Ref'                                                                            | 'DeletionMark' | 'Parent' | 'Code' | 'IsExpense' | 'IsRevenue' | 'IsFinancialMovementType' | 'Description_en' | 'Description_hash' | 'Description_ru'  | 'Description_tr' |
+		| 'e1cib/data/Catalog.ExpenseAndRevenueTypes?ref=905250ebf6785fab11ee08464d1c5a43' | 'False'        | ''       | 1      | 'True'      | 'False'     | 'False'                   | ''               | ''                 | 'Статья расходов' | ''               |
+
