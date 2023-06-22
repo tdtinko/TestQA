@@ -19,8 +19,9 @@
 	// Справочник.Agreements
 
 	И я проверяю или создаю для справочника "Agreements" объекты:
-		| 'Ref'                                                                | 'DeletionMark' | 'Code' | 'Number' | 'Date'               | 'PartnerSegment' | 'Partner'                                                          | 'Company' | 'PriceType'                                             | 'ItemSegment' | 'StartUsing'         | 'EndOfUse'           | 'ManagerSegment' | 'PriceIncludeTax' | 'DaysBeforeDelivery' | 'Store' | 'Type'                         | 'LegalName'                                                         | 'CurrencyMovementType'                                                                            | 'ApArPostingDetail'                   | 'StandardAgreement' | 'Kind'                        | 'UseCreditLimit' | 'CreditLimitAmount' | 'PaymentTerm' | 'Description_en' | 'Description_hash' | 'Description_ru'             | 'Description_tr' |
-		| 'e1cib/data/Catalog.Agreements?ref=905650ebf6785fab11ee1037040c38ef' | 'False'        | 10     | ''       | '01.01.0001 0:00:00' | ''               | 'e1cib/data/Catalog.Partners?ref=b762b13668d0905011eb7663e35d794b' | ''        | 'e1cib/data/Catalog.PriceTypes?refName=ManualPriceType' | ''            | '01.01.0001 0:00:00' | '01.01.0001 0:00:00' | ''               | 'False'           |                      | ''      | 'Enum.AgreementTypes.Customer' | 'e1cib/data/Catalog.Companies?ref=b762b13668d0905011eb7674324a4a2a' | 'e1cib/data/ChartOfCharacteristicTypes.CurrencyMovementType?ref=b762b13668d0905011eb7663e35d796b' | 'Enum.ApArPostingDetail.ByAgreements' | ''                  | 'Enum.AgreementKinds.Regular' | 'False'          |                     | ''            | ''               | ''                 | 'Соглашение без организации' | ''               |
+		| 'Ref'                                                                | 'DeletionMark' | 'Code' | 'Number' | 'Date'               | 'PartnerSegment' | 'Partner'                                                          | 'Company'                                                           | 'PriceType'                                             | 'ItemSegment' | 'StartUsing'         | 'EndOfUse'           | 'ManagerSegment' | 'PriceIncludeTax' | 'DaysBeforeDelivery' | 'Store' | 'Type'                         | 'LegalName'                                                         | 'CurrencyMovementType'                                                                            | 'ApArPostingDetail'                   | 'StandardAgreement' | 'Kind'                        | 'UseCreditLimit' | 'CreditLimitAmount' | 'PaymentTerm' | 'Description_en' | 'Description_hash' | 'Description_ru'                      | 'Description_tr' |
+		| 'e1cib/data/Catalog.Agreements?ref=905650ebf6785fab11ee1037040c38ef' | 'False'        | 10     | ''       | '01.01.0001 0:00:00' | ''               | 'e1cib/data/Catalog.Partners?ref=b762b13668d0905011eb7663e35d794b' | ''                                                                  | 'e1cib/data/Catalog.PriceTypes?refName=ManualPriceType' | ''            | '01.01.0001 0:00:00' | '01.01.0001 0:00:00' | ''               | 'False'           |                      | ''      | 'Enum.AgreementTypes.Customer' | 'e1cib/data/Catalog.Companies?ref=b762b13668d0905011eb7674324a4a2a' | 'e1cib/data/ChartOfCharacteristicTypes.CurrencyMovementType?ref=b762b13668d0905011eb7663e35d796b' | 'Enum.ApArPostingDetail.ByAgreements' | ''                  | 'Enum.AgreementKinds.Regular' | 'False'          |                     | ''            | ''               | ''                 | 'Соглашение без организации'          | ''               |
+		| 'e1cib/data/Catalog.Agreements?ref=905650ebf6785fab11ee1037040c38f0' | 'False'        | 11     | ''       | '01.01.0001 0:00:00' | ''               | 'e1cib/data/Catalog.Partners?ref=b762b13668d0905011eb7663e35d794b' | 'e1cib/data/Catalog.Companies?ref=b762b13668d0905011eb76684b9f685b' | 'e1cib/data/Catalog.PriceTypes?refName=ManualPriceType' | ''            | '01.01.0001 0:00:00' | '01.01.0001 0:00:00' | ''               | 'False'           |                      | ''      | 'Enum.AgreementTypes.Customer' | 'e1cib/data/Catalog.Companies?ref=b762b13668d0905011eb7674324a4a2a' | 'e1cib/data/ChartOfCharacteristicTypes.CurrencyMovementType?ref=b762b13668d0905011eb7663e35d796b' | 'Enum.ApArPostingDetail.ByAgreements' | ''                  | 'Enum.AgreementKinds.Regular' | 'False'          |                     | ''            | ''               | ''                 | 'Соглашение (Собственная компания 2)' | ''               |
 
 Сценарий: проверка заполнения полей в документе
 	* Созадние документа и заполнение полей
@@ -45,8 +46,10 @@
 				И в таблице "List" я перехожу к строке:
 					| 'Код' | 'Наименование'           |
 					| '2'   | 'Собственная компания 2' |
-				И в таблице "List" я выбираю текущую строку		
-	* Заполняем соглашение с организацией
+				И в таблице "List" я выбираю текущую строку	
+		И Пауза 5
+					
+	* Заполняем соглашение с организацией 1
 		И я нажимаю кнопку выбора у поля с именем "Agreement"
 		И в таблице "List"  я перехожу к строке:
 			| 'Наименование'                                                    |
@@ -57,16 +60,26 @@
 				И я нажимаю кнопку выбора у поля с именем "Company"
 				И в таблице "List" я перехожу к строке:
 					| 'Код' | 'Наименование'           |
-					| '2'   | 'Собственная компания 2' |
+					| '2'   | 'Собственная компания 1' |
 				И в таблице "List" я выбираю текущую строку	
+		И Пауза 5				
+	* Заполняем соглашение с организацией 2 
+		И я нажимаю кнопку выбора у поля с именем "Agreement"
+		И в таблице "List"  я перехожу к строке:
+			| 'Наименование'                                                    |
+			| 'Соглашение (Собственная компания 2)' |
+		И в таблице "List" я выбираю текущую строку			
+		Если элемент формы с именем "Company" доступен Тогда
+			И элемент формы с именем "Company" стал равен 'Собственная компания 2'		
+					
 	* Проверим, что при смене соглашение без организации, то организация очищается
 		И я нажимаю кнопку выбора у поля с именем "Agreement"
 		И в таблице "List"  я перехожу к строке:
 			| 'Наименование'            |
 			| 'Соглашение без организации' |
 		И в таблице "List" я выбираю текущую строку			
-		Тогда открылось окно 'Табличная часть товаров будет обновлена'
-		И я нажимаю на кнопку с именем 'FormOK'
+		Если открылось окно 'Табличная часть товаров будет обновлена' Тогда
+			И я нажимаю на кнопку с именем 'FormOK'
 		Если элемент формы с именем "Company" доступен Тогда
 			И элемент формы с именем "Company" стал равен ''
 	* Окончание
